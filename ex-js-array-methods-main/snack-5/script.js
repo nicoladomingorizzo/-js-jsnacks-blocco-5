@@ -12,16 +12,16 @@ console.log(evenNums);
 
 // Crea un array a partire dall'array nums, che abbia solo i numeri pari con forEach
 const evenNumsFe = [];
-nums.forEach((number, i) => {
-    if (nums[i] % 2 === 0) {
-        evenNumsFe.push(nums[i]);
+nums.forEach((number) => {
+    if (number % 2 === 0) {
+        evenNumsFe.push(number);
     }
 });
 console.log(evenNumsFe);
 
 // Crea un array a partire dall'array nums, che abbia solo i numeri pari con filter
-const evenNumsFil = nums.filter((number, i) => {
-    if (nums[i] % 2 === 0) {
+const evenNumsFil = nums.filter((number) => {
+    if (number % 2 === 0) {
         return true;
     }
     return false;
@@ -29,7 +29,7 @@ const evenNumsFil = nums.filter((number, i) => {
 console.log(evenNumsFil);
 
 // Crea un array a partire dall'array nums, che abbia solo i numeri pari con filter one liner
-const evenNumsFilOl = nums.filter((number, i) => nums[i] % 2 === 0);
+const evenNumsFilOl = nums.filter((number) => number % 2 === 0);
 console.log(evenNumsFilOl);
 
 

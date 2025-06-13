@@ -28,16 +28,16 @@ for (let i = 0; i < students.length; i++) {
 };
 
 // Recupera la classe dello studente 'Marco Lanci' con forEach
-students.forEach((student, i) => {
-  if (students[i].name === 'Marco Lanci') {
-    console.log(students[i].class);
+students.forEach((student) => {
+  if (student.name === 'Marco Lanci') {
+    console.log(student.class);
   }
 });
 
 // Recupera la classe dello studente 'Marco Lanci' con find
-const classFind = students.find((student, i) => {
-  if (students[i].name === 'Marco Lanci') {
-    return console.log(students[i].class);
+const classFind = students.find((student) => {
+  if (student.name === 'Marco Lanci') {
+    return console.log(student.class);
   }
 })
 // Risultato: '3C'

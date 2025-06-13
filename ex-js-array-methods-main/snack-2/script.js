@@ -11,8 +11,8 @@ for (let i = 0; i < people.length; i++) {
 };
 // Stampa in console tutti i nomi con forEach
 people.forEach((person, i) => {
-  console.log(people[i].name);
+  console.log(person.name);
 });
 // Stampa in console tutti i nomi con forEach con one liner
-people.forEach((person, i) => console.log(people[i].name));
+people.forEach((person, i) => console.log(person.name));
 // Risultato: 'Paolo', 'Giulia', 'Marco'

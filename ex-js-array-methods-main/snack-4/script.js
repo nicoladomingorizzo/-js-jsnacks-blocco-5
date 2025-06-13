@@ -15,25 +15,25 @@ console.log(authorsNames);
 
 // Crea un nuovo array coi nomi di tutti gli autori con forEach
 const authorsNamesFe = [];
-posts.forEach((author, i) => {
-  const authorName = posts[i].author;
+posts.forEach((author) => {
+  const authorName = author.author;
   authorsNamesFe.push(authorName);
 });
 console.log(authorsNamesFe);
 
 // Crea un nuovo array coi nomi di tutti gli autori con forEach one liner
 const authorsNamesFeOl = [];
-posts.forEach((author, i) => authorsNamesFeOl.push(posts[i].author));
+posts.forEach((author) => authorsNamesFeOl.push(author.author));
 console.log(authorsNamesFeOl);
 
 // Crea un nuovo array coi nomi di tutti gli autori con map
-const authorsNamesMap = posts.map((author, i) => {
-  return posts[i].author;
+const authorsNamesMap = posts.map((author) => {
+  return author.author;
 });
 console.log(authorsNamesMap);
 
 // Crea un nuovo array coi nomi di tutti gli autori con map one liner
-const authorsNamesMapOl = posts.map((author, i) => posts[i].author);
+const authorsNamesMapOl = posts.map((author) => author.author);
 console.log(authorsNamesMapOl);
 
 // Risultato: ['Marco', 'Luca', 'Fabrizio', 'Enrico']

@@ -29,19 +29,19 @@ for (let i = 0; i < students.length; i++) {
 };
 
 // Recupera i dati dello studente con id 2 con forEach
-students.forEach((student, i) => {
-  if (students[i].id === 2) {
-    console.log(students[i]);
+students.forEach((student) => {
+  if (student.id === 2) {
+    console.log(student);
   }
 });
 
 // Recupera i dati dello studente con id 2 con find
-const toFind = students.find((student, i) => {
-  return students[i].id === 2;
+const toFind = students.find((student) => {
+  return student.id === 2;
 });
 console.log(toFind);
 
 // Recupera i dati dello studente con id 2 con find one liner
-const toFindOl = students.find((student, i) => students[i].id === 2);
+const toFindOl = students.find((student) => student.id === 2);
 console.log(toFindOl);
 // Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' }
