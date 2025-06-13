@@ -19,5 +19,25 @@ const students = [
   },
 ];
 
-// Recupera la classe dello studente 'Marco Lanci'
+// Recupera la classe dello studente 'Marco Lanci' con ciclo for
+for (let i = 0; i < students.length; i++) {
+  const student = students[i].name;
+  if (student === 'Marco Lanci') {
+    console.log(students[i].class);
+  }
+};
+
+// Recupera la classe dello studente 'Marco Lanci' con forEach
+students.forEach((student, i) => {
+  if (students[i].name === 'Marco Lanci') {
+    console.log(students[i].class);
+  }
+});
+
+// Recupera la classe dello studente 'Marco Lanci' con find
+const classFind = students.find((student, i) => {
+  if (students[i].name === 'Marco Lanci') {
+    return console.log(students[i].class);
+  }
+})
 // Risultato: '3C'
